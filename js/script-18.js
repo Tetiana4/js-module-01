@@ -9,5 +9,13 @@ const totalPrice = pricePerDroid * orderedQuantity;
     message = `Недостаточно средств на счету!`;
   }
   
+  // or
+  
+  // if(totalPrice > customerCredits){
+  //   message = `Insufficient funds!`
+  // } else {
+  //   message = `You ordered ${orderedQuantity} droids, you have ${customerCredits - totalPrice} credits left`;
+  // }
+
   return message;
 }
